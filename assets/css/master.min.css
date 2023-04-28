@@ -101,7 +101,8 @@ body {
 
 a:hover {
     color: #5764bb;
-    letter-spacing: 2px
+    letter-spacing: 2px;
+    cursor: url('../cursor.png'), default;
 }
 
 a,
