@@ -92,7 +92,7 @@ body {
     transform: translateX(-50%) translateY(-50%);
     background-size: cover;
     overflow: hidden;
-    filter: blur(2px) brightness(62.5%);
+    /*filter: blur(2px) brightness(62.5%);  #Adds blur effect*/ 
     background: #070915;
     background: rgba(7, 9, 21, 0.5);
     top: 50%;
@@ -125,5 +125,9 @@ html {
 }
 
 iframe {
+    display: none
+}
+
+.hide {
     display: none
 }

@@ -20,7 +20,7 @@
     <title>Infinity Crown</title>
 </head>
 <body>
-    <video class="fadeIn" autoplay="true" disablePictureInPicture disableRemotePlayback id="vid" playsinline>
+    <video class="fadeIn" disablePictureInPicture disableRemotePlayback id="vid" playsinline autoplay>
         <source src="" type="video/mp4" loop id="sourcevid"/>
     </video>
 
@@ -41,8 +41,8 @@
 </div>
 <div class="font-right-bottom animated fadeInUp no-select">
     <a class="font-bold font-white subtext" href="#" id="videoButton" onclick="videoPlay()">resume video</a> 
-    <a class="font-light font-white no-margin subtext"> / </a> 
-    <a class="font-bold font-white subtext" href="#" id="audioButton" onclick="audioPlay()">mute video</a>
+    <a class="font-light font-white no-margin subtext hide"> / </a> 
+    <a class="font-bold font-white subtext hide" href="#" id="audioButton" onclick="audioPlay()">mute video</a>
     <p class="font-light font-white no-margin subtext" id="cake">I like cake</p>
     <br>
 </div>
