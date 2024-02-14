@@ -25,9 +25,10 @@
 <div class="font-left animated fadeInDown no-select">
     <br><p class="font-light font-white title">Infinity Crown</p>
     <br><a class="font-bold font-white link" id="website" href="https://infinitycrown.ca" target="_blank">infinitycrown&#46;ca</a>
+    <br><a class="font-bold font-white link" id="shop" href="https://shop.infinitycrown.ca/" target="_blank">consultation</a>
     <br><a class="font-bold font-white link" href="https://github.com/InfinityCrownLTD" target="_blank">portfolio</a>
     <br><a class="font-bold font-white link" id="email" href="mailto:info@infinitycrown.ca" target="_blank">info@infinitycrown.ca</a>
-    <br><a class="font-bold font-white" id="business">Business Identification Number (BIN): 1000529479</a>
+    <br><a class="font-bold font-white" id="business">business identification number (BIN): 1000529479</a>
     <br><a><img src="assets/canada.png" onclick="toggleLanguage('en')"></a> <a><img onclick="toggleLanguage('no')" src="assets/no.png"></a>
 </div>
 <div class="font-left-bottom animated fadeInUp no-select">
@@ -52,13 +53,14 @@
 function toggleLanguage(language) {
     let business = document.getElementById("business");
     let email = document.getElementById("email");
-
+    let shop = document.getElementById("shop");
     let cake = document.getElementById("cake");
     
     if (language === "no") {
-        business.innerHTML = "Organisasjonsnummer: 928 593 215";
+        business.innerHTML = "organisasjonsnummer: 928 593 215";
         email.innerHTML = "info@infinitycrown.no";
         email.href = "mailto:info@infinitycrown.no"
+        shop.href = "https://shop.infinitycrown.no/"
         document.querySelectorAll('#website').forEach(el=>{
         el.innerHTML = "infinitycrown.no";
         el.href = "https://infinitycrown.no";
@@ -66,9 +68,10 @@ function toggleLanguage(language) {
         cake.innerHTML = "Jeg liker kake";
     }
     else {
-        business.innerHTML = "Business Identification Number (BIN): 1000529479";
+        business.innerHTML = "business identification number (BIN): 1000529479";
         email.innerHTML = "info@infinitycrown.ca";
         email.href = "mailto:info@infinitycrown.ca"
+        shop.href = "https://shop.infinitycrown.ca/"
         document.querySelectorAll('#website').forEach(el=>{
         el.innerHTML = "infinitycrown.ca";
         el.href = "https://infinitycrown.ca";
