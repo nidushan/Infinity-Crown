@@ -118,17 +118,18 @@
             ];
     
             elementsToUpdate.forEach(element => {
-                let el = document.getElementById(element.id);
-                if (typeof element.data === "string") {
-                    el.innerHTML = element.data;
-                } else {
-                    el.innerHTML = element.data.text;
-                    el.href = element.data.link;
-                }
+                const elements = document.querySelectorAll(`#${element.id}`);
+                elements.forEach(el => {
+                    if (typeof element.data === "string") {
+                        el.innerHTML = element.data;
+                    } else {
+                        el.innerHTML = element.data.text;
+                        el.href = element.data.link;
+                    }
+                });
             });
         }
-    </script>
-    
+    </script>    
 </body>
 
 </html>
